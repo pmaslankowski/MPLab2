@@ -20,6 +20,10 @@ normaliseClause(X v Y, [X|T]) :-
 neg(~X, X).
 neg(X, ~X).
 
+del(H, [H|T], T) :- !.
+del(X, [H|T], [H|Res]) :-
+	del(X, T, Res).
+
 eliminateRepetitions([], Acc, Acc).
 eliminateRepetitions([H|T], Acc, Res) :-
 	member(H, Acc), !,
@@ -29,19 +33,27 @@ eliminateRepetitions([H|T], Acc, Res) :-
 eliminateRepetitions(L, Res) :-
 	eliminateRepetitions(L, [], Res).
 
-findResolvents([], _, _, Acc, Acc).
-findResolvents([H|T], Clause2, CurrAcc, Acc, Res) :-
+findResolvents([], _, _, Acc, Acc, Index1, Index2).
+findResolvents([H|T], Clause2, CurrAcc, Acc, Res, Index1, Index2) :-
 	neg(H, NegH),	
 	member(NegH, Clause2), !,
-	select(NegH, Clause2, Tmp),
+	del(NegH, Clause2, Tmp),
 	appn([CurrAcc, T, Tmp], Tmp2),
 	eliminateRepetitions(Tmp2, Tmp3),
-	findResolvents(T, Clause2, [H | CurrAcc], [Tmp3|Acc], Res).
-findResolvents([H|T], Clause2, CurrAcc, Acc, Res) :-
-	findResolvents(T, Clause2, [H|CurrAcc], Acc, Res).	
-findResolvents(Clause1, Clause2, Res) :-
-	findResolvnets(Clause1, Clause2, [], [], Res).
-	
+	findResolvents(T, Clause2, [H | CurrAcc], [(Tmp3, (Index1, Index2)) | Acc], Res, Index1, Index2).
+findResolvents([H|T], Clause2, CurrAcc, Acc, Res, Index1, Index2) :-
+	findResolvents(T, Clause2, [H|CurrAcc], Acc, Res, Index1, Index2).	
+findResolvents(Clause1, Clause2, Res, Index1, Index2) :-
+	findResolvents(Clause1, Clause2, [], [], Res, Index1, Index2).
+
+findResolventsOfList([], _, _, _, Acc, Acc).
+findResolventsOfList([H|Clauses], Index2, Clause1, Index1, Acc, Res) :-
+	findResolvents(Clause1, H, Tmp, Index1, Index2),
+	NewIndex2 is Index2 + 1,
+	appn(Tmp, Tmp2),
+	appn([Tmp2, Acc], NewAcc),
+	findResolventsOfList(Clauses, NewIndex2, Clause1, Index1, NewAcc, Res). 
+
 	
 
 
