@@ -8,21 +8,39 @@ appn([H|T], Acc, End, Res) :-
 appn(L, Res) :-
 	appn(L, Hole, Hole, Res).
 
-normaliseClause(~X, ([], [X])) :-
+normaliseClause(~X, [~X]) :-
 	atom(X), !.
-normaliseClause(X, ([X], [])) :-
+normaliseClause(X, [X]) :-
 	atom(X).
-normaliseClause(~X v Y, (Pos, [X|Neg])) :-
-	!, normaliseClause(Y, (Pos, Neg)).
-normaliseClause(X v Y, ([X|Pos], Neg)) :-
-	normaliseClause(Y, (Pos, Neg)).
+normaliseClause(~X v Y, [~X|T]) :-
+	!, normaliseClause(Y, T).
+normaliseClause(X v Y, [X|T]) :-
+	normaliseClause(Y, T).
 
+neg(~X, X).
+neg(X, ~X).
 
-findResolvent(([H|Pos1], Neg1), (Pos2, Neg2), (AccPos, AccNeg), (ResPos, ResNeg) ) :-
-	member(H, Neg2),
-	appn([Pos1, Pos2, AccPos], ResPos), 
-	select(H, Neg2, Tmp),	
-	appn([Neg1, Tmp, AccNeg], ResNeg),
+eliminateRepetitions([], Acc, Acc).
+eliminateRepetitions([H|T], Acc, Res) :-
+	member(H, Acc), !,
+	eliminateRepetitions(T, Acc, Res).
+eliminateRepetitions([H|T], Acc, Res) :-
+	eliminateRepetitions(T, [H|Acc], Res).
+eliminateRepetitions(L, Res) :-
+	eliminateRepetitions(L, [], Res).
+
+findResolvents([], _, _, Acc, Acc).
+findResolvents([H|T], Clause2, CurrAcc, Acc, Res) :-
+	neg(H, NegH),	
+	member(NegH, Clause2), !,
+	select(NegH, Clause2, Tmp),
+	appn([CurrAcc, T, Tmp], Tmp2),
+	eliminateRepetitions(Tmp2, Tmp3),
+	findResolvents(T, Clause2, [H | CurrAcc], [Tmp3|Acc], Res).
+findResolvents([H|T], Clause2, CurrAcc, Acc, Res) :-
+	findResolvents(T, Clause2, [H|CurrAcc], Acc, Res).	
+findResolvents(Clause1, Clause2, Res) :-
+	findResolvnets(Clause1, Clause2, [], [], Res).
 	
 	
 
