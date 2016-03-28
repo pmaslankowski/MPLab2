@@ -1,13 +1,6 @@
 :- op(200, fx, ~).
 :- op(500, xfy, v).
 
-appn([], Acc, [], Acc).
-appn([H|T], Acc, End, Res) :-
-	append(H, Hole, End),
-	appn(T, Acc, Hole, Res). 
-appn(L, Res) :-
-	appn(L, Hole, Hole, Res).
-
 normaliseClause(~X, [~X]) :-
 	atom(X), !.
 normaliseClause(X, [X]) :-
@@ -20,39 +13,62 @@ normaliseClause(X v Y, [X|T]) :-
 neg(~X, X).
 neg(X, ~X).
 
-del(H, [H|T], T) :- !.
-del(X, [H|T], [H|Res]) :-
-	del(X, T, Res).
-
-eliminateRepetitions([], Acc, Acc).
-eliminateRepetitions([H|T], Acc, Res) :-
+rem([], Acc, Acc).
+rem([H|T], Acc, Res) :-
 	member(H, Acc), !,
-	eliminateRepetitions(T, Acc, Res).
-eliminateRepetitions([H|T], Acc, Res) :-
-	eliminateRepetitions(T, [H|Acc], Res).
-eliminateRepetitions(L, Res) :-
-	eliminateRepetitions(L, [], Res).
+	rem(T, Acc, Res).
+rem([H|T], Acc, Res) :-
+	rem(T, [H|Acc], Res).
+rem(L, Res) :-
+	rem(L, [], Res).
 
-findResolvents([], _, _, Acc, Acc, Index1, Index2).
-findResolvents([H|T], Clause2, CurrAcc, Acc, Res, Index1, Index2) :-
-	neg(H, NegH),	
-	member(NegH, Clause2), !,
-	del(NegH, Clause2, Tmp),
-	appn([CurrAcc, T, Tmp], Tmp2),
-	eliminateRepetitions(Tmp2, Tmp3),
-	findResolvents(T, Clause2, [H | CurrAcc], [(Tmp3, (Index1, Index2)) | Acc], Res, Index1, Index2).
-findResolvents([H|T], Clause2, CurrAcc, Acc, Res, Index1, Index2) :-
-	findResolvents(T, Clause2, [H|CurrAcc], Acc, Res, Index1, Index2).	
-findResolvents(Clause1, Clause2, Res, Index1, Index2) :-
-	findResolvents(Clause1, Clause2, [], [], Res, Index1, Index2).
+resolvent1(Clause1, Clause2, Res) :-
+	select(Var, Clause1, Clause1R),
+	neg(Var, NegVar),
+	select(NegVar, Clause2, Clause2R),
+	append(Clause1R, Clause2R, Tmp),
+	rem(Tmp, Res).
 
-findResolventsOfList([], _, _, _, Acc, Acc).
-findResolventsOfList([H|Clauses], Index2, Clause1, Index1, Acc, Res) :-
-	findResolvents(Clause1, H, Tmp, Index1, Index2),
-	NewIndex2 is Index2 + 1,
-	appn(Tmp, Tmp2),
-	appn([Tmp2, Acc], NewAcc),
-	findResolventsOfList(Clauses, NewIndex2, Clause1, Index1, NewAcc, Res). 
+resolvent(Clauses,(TmpRes, (Index1, Index2))) :-
+	nth1(Index1, Clauses, (Clause1,_,_)),
+	nth1(Index2, Clauses, (Clause2,_,_)),
+	Index1 < Index2,
+	resolvent1(Clause1, Clause2, TmpRes).
+
+proof1(Clauses, [([],(Index1,Index2))|[]]) :-
+	resolvent(Clauses, ([], (Index1,Index2))), !.
+proof1(Clauses, [(X,I1,I2)|ProofTmp]) :-
+	resolvent(Clauses, (X,I1,I2)),
+	\+member((X,_,_), Clauses),
+	append(Clauses, [(X,I1,I2)], NewClauses),
+	proof1(NewClauses, ProofTmp).
+
+normalise(([],0,0), ([],axiom)).
+normalise(([],I1,I2), ([],I1,I2)).
+normalise((Clause,0,0), (Res, axiom)) :-
+	!,normaliseClause(Res, Clause).
+normalise((Clause, I1, I2), (Res, I1, I2)) :-
+	normaliseClause(Res, Clause).
+
+normaliseProof([],[]).
+normaliseProof([H|T], [Normalised1|NormalisedOthers]) :-
+	normalise(H, Normalised1),
+	normaliseProof(T, NormalisedOthers).
+
+normaliseInput([],[]).
+normaliseInput([H|T], [(HR,0,0)|TR]) :-
+	normaliseClause(H, HR),
+	normaliseInput(T, TR).
+
+prove(Clauses, Res) :-
+	normaliseInput(Clauses, NormalisedClauses),
+	proof1(NormalisedClauses, Proof),
+	append(NormalisedClauses, Proof, Tmp),
+	normaliseProof(Tmp, Res).
+
+	
+
+	 
 
 	
 
