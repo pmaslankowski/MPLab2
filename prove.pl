@@ -13,21 +13,46 @@ normaliseClause(X v Y, [X|T]) :-
 neg(~X, X).
 neg(X, ~X).
 
-rem([], Acc, Acc).
-rem([H|T], Acc, Res) :-
-	member(H, Acc), !,
-	rem(T, Acc, Res).
-rem([H|T], Acc, Res) :-
-	rem(T, [H|Acc], Res).
-rem(L, Res) :-
-	rem(L, [], Res).
+equal([],[]).
+equal([H|T], L2) :-
+	select(H, L2, Tmp),
+	equal(T, Tmp).
+
+mem([(H,_,_)|_], El) :-
+	equal(H, El),!.
+mem([_|T], El) :-
+	mem(T, El).
+
+subset1([], _).
+subset1([H|T], L) :-
+	member(H, L),
+	subset1(T, L).
+
+subset([H|T], Clause) :-
+	subset1(Clause, H),!.
+subset([_|T], Clause) :-
+	subset(T, Clause).
+
+eliminate([], [], _) :- !,fail.
+eliminate([], Acc, Acc).
+eliminate([H|T], Acc, Res) :-
+	neg(H, NegH),
+	select(NegH, Acc, NewAcc), !,
+	eliminate(T, NewAcc, Res).
+eliminate([H|T], Acc, Res) :-
+	eliminate(T, [H|Acc], Res).
+
+eliminate([], []).
+eliminate(Clause, Res) :-
+	eliminate(Clause, [], Res).
 
 resolvent1(Clause1, Clause2, Res) :-
 	select(Var, Clause1, Clause1R),
 	neg(Var, NegVar),
 	select(NegVar, Clause2, Clause2R),
 	append(Clause1R, Clause2R, Tmp),
-	rem(Tmp, Res).
+	list_to_set(Tmp, Tmp2),
+	eliminate(Tmp2, Res).
 
 resolvent(Clauses,(TmpRes, (Index1, Index2))) :-
 	nth1(Index1, Clauses, (Clause1,_,_)),
@@ -35,13 +60,14 @@ resolvent(Clauses,(TmpRes, (Index1, Index2))) :-
 	Index1 < Index2,
 	resolvent1(Clause1, Clause2, TmpRes).
 
-proof1(Clauses, [([],(Index1,Index2))|[]]) :-
+proof(Clauses, [([],(Index1,Index2))|[]]) :-
 	resolvent(Clauses, ([], (Index1,Index2))), !.
-proof1(Clauses, [(X,I1,I2)|ProofTmp]) :-
+proof(Clauses, [(X,I1,I2)|ProofTmp]) :-
 	resolvent(Clauses, (X,I1,I2)),
-	\+member((X,_,_), Clauses),
+	\+mem(Clauses,X),
+	\+subset(Clauses, X),
 	append(Clauses, [(X,I1,I2)], NewClauses),
-	proof1(NewClauses, ProofTmp).
+	proof(NewClauses, ProofTmp).
 
 normalise(([],0,0), ([],axiom)).
 normalise(([],I1,I2), ([],I1,I2)).
@@ -62,15 +88,6 @@ normaliseInput([H|T], [(HR,0,0)|TR]) :-
 
 prove(Clauses, Res) :-
 	normaliseInput(Clauses, NormalisedClauses),
-	proof1(NormalisedClauses, Proof),
+	proof(NormalisedClauses, Proof),
 	append(NormalisedClauses, Proof, Tmp),
 	normaliseProof(Tmp, Res).
-
-	
-
-	 
-
-	
-
-
-	
