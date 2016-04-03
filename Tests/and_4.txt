@@ -1,0 +1,23 @@
+[ x21
+, ~x17 v ~x20 v ~x21
+, ~x17 v x20 v x21
+, x17 v ~x20 v x21
+, x17 v x20 v ~x21
+, ~x19 v ~input_a_0 v x20
+, input_a_0 v ~x20
+, x19 v ~x20
+, ~x18 v ~input_a_1 v x19
+, input_a_1 v ~x19
+, x18 v ~x19
+, ~input_a_3 v ~input_a_2 v x18
+, input_a_2 v ~x18
+, input_a_3 v ~x18
+, ~x16 v ~input_a_3 v x17
+, input_a_3 v ~x17
+, x16 v ~x17
+, ~x15 v ~input_a_2 v x16
+, input_a_2 v ~x16
+, x15 v ~x16
+, ~input_a_0 v ~input_a_1 v x15
+, input_a_1 v ~x15
+, input_a_0 v ~x15 ].

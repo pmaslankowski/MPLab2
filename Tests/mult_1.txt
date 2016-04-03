@@ -1,0 +1,11 @@
+[ x23
+, ~x21 v ~x22 v ~x23
+, ~x21 v x22 v x23
+, x21 v ~x22 v x23
+, x21 v x22 v ~x23
+, ~input_a_0 v ~input_b_0 v x22
+, input_b_0 v ~x22
+, input_a_0 v ~x22
+, ~input_a_0 v ~input_b_0 v x21
+, input_b_0 v ~x21
+, input_a_0 v ~x21 ].

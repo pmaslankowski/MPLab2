@@ -1,0 +1,78 @@
+[ x101
+, ~x100 v x101
+, ~x97 v x101
+, x97 v x100 v ~x101
+, ~x98 v ~x99 v ~x100
+, ~x98 v x99 v x100
+, x98 v ~x99 v x100
+, x98 v x99 v ~x100
+, ~x93 v ~x94 v x99
+, x94 v ~x99
+, x93 v ~x99
+, ~x90 v ~x91 v x98
+, x91 v ~x98
+, x90 v ~x98
+, ~x96 v x97
+, ~x89 v x97
+, x89 v x96 v ~x97
+, ~x92 v ~x95 v ~x96
+, ~x92 v x95 v x96
+, x92 v ~x95 v x96
+, x92 v x95 v ~x96
+, ~x93 v ~x94 v ~x95
+, ~x93 v x94 v x95
+, x93 v ~x94 v x95
+, x93 v x94 v ~x95
+, ~x85 v ~x86 v x94
+, x86 v ~x94
+, x85 v ~x94
+, ~input_a_1 v ~input_b_1 v x93
+, input_b_1 v ~x93
+, input_a_1 v ~x93
+, ~x90 v ~x91 v ~x92
+, ~x90 v x91 v x92
+, x90 v ~x91 v x92
+, x90 v x91 v ~x92
+, ~x82 v ~x83 v x91
+, x83 v ~x91
+, x82 v ~x91
+, ~input_a_1 v ~input_b_1 v x90
+, input_b_1 v ~x90
+, input_a_1 v ~x90
+, ~x88 v x89
+, ~x81 v x89
+, x81 v x88 v ~x89
+, ~x84 v ~x87 v ~x88
+, ~x84 v x87 v x88
+, x84 v ~x87 v x88
+, x84 v x87 v ~x88
+, ~x85 v ~x86 v ~x87
+, ~x85 v x86 v x87
+, x85 v ~x86 v x87
+, x85 v x86 v ~x87
+, ~input_a_1 v ~input_b_0 v x86
+, input_b_0 v ~x86
+, input_a_1 v ~x86
+, ~input_a_0 v ~input_b_1 v x85
+, input_b_1 v ~x85
+, input_a_0 v ~x85
+, ~x82 v ~x83 v ~x84
+, ~x82 v x83 v x84
+, x82 v ~x83 v x84
+, x82 v x83 v ~x84
+, ~input_a_0 v ~input_b_1 v x83
+, input_b_1 v ~x83
+, input_a_0 v ~x83
+, ~input_a_1 v ~input_b_0 v x82
+, input_b_0 v ~x82
+, input_a_1 v ~x82
+, ~x79 v ~x80 v ~x81
+, ~x79 v x80 v x81
+, x79 v ~x80 v x81
+, x79 v x80 v ~x81
+, ~input_a_0 v ~input_b_0 v x80
+, input_b_0 v ~x80
+, input_a_0 v ~x80
+, ~input_a_0 v ~input_b_0 v x79
+, input_b_0 v ~x79
+, input_a_0 v ~x79 ].

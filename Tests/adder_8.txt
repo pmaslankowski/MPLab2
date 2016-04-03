@@ -1,0 +1,403 @@
+[ x268
+, ~x267 v x268
+, ~x210 v x268
+, x210 v x267 v ~x268
+, ~x266 v x267
+, ~x255 v x267
+, x255 v x266 v ~x267
+, ~x256 v ~x265 v ~x266
+, ~x256 v x265 v x266
+, x256 v ~x265 v x266
+, x256 v x265 v ~x266
+, ~x177 v ~x264 v ~x265
+, ~x177 v x264 v x265
+, x177 v ~x264 v x265
+, x177 v x264 v ~x265
+, ~x263 v x264
+, ~x259 v x264
+, x259 v x263 v ~x264
+, ~x262 v x263
+, ~x260 v x263
+, x260 v x262 v ~x263
+, ~x204 v x262
+, ~x261 v x262
+, x261 v x204 v ~x262
+, ~x178 v ~x201 v x261
+, x201 v ~x261
+, x178 v ~x261
+, ~x257 v ~x241 v x260
+, x241 v ~x260
+, x257 v ~x260
+, ~x258 v ~x227 v x259
+, x227 v ~x259
+, x258 v ~x259
+, ~x257 v ~x236 v x258
+, x236 v ~x258
+, x257 v ~x258
+, ~x178 v ~x180 v x257
+, x180 v ~x257
+, x178 v ~x257
+, ~x149 v ~x174 v ~x256
+, ~x149 v x174 v x256
+, x149 v ~x174 v x256
+, x149 v x174 v ~x256
+, ~x254 v x255
+, ~x246 v x255
+, x246 v x254 v ~x255
+, ~x247 v ~x253 v ~x254
+, ~x247 v x253 v x254
+, x247 v ~x253 v x254
+, x247 v x253 v ~x254
+, ~x178 v ~x252 v ~x253
+, ~x178 v x252 v x253
+, x178 v ~x252 v x253
+, x178 v x252 v ~x253
+, ~x251 v x252
+, ~x249 v x252
+, x249 v x251 v ~x252
+, ~x202 v x251
+, ~x250 v x251
+, x250 v x202 v ~x251
+, ~x182 v ~x196 v x250
+, x196 v ~x250
+, x182 v ~x250
+, ~x248 v ~x191 v x249
+, x191 v ~x249
+, x248 v ~x249
+, ~x182 v ~x186 v x248
+, x186 v ~x248
+, x182 v ~x248
+, ~x151 v ~x172 v ~x247
+, ~x151 v x172 v x247
+, x151 v ~x172 v x247
+, x151 v x172 v ~x247
+, ~x245 v x246
+, ~x234 v x246
+, x234 v x245 v ~x246
+, ~x235 v ~x244 v ~x245
+, ~x235 v x244 v x245
+, x235 v ~x244 v x245
+, x235 v x244 v ~x245
+, ~x180 v ~x243 v ~x244
+, ~x180 v x243 v x244
+, x180 v ~x243 v x244
+, x180 v x243 v ~x244
+, ~x242 v x243
+, ~x238 v x243
+, x238 v x242 v ~x243
+, ~x241 v x242
+, ~x239 v x242
+, x239 v x241 v ~x242
+, ~x199 v x241
+, ~x240 v x241
+, x240 v x199 v ~x241
+, ~x181 v ~x195 v x240
+, x195 v ~x240
+, x181 v ~x240
+, ~x236 v ~x226 v x239
+, x226 v ~x239
+, x236 v ~x239
+, ~x237 v ~x188 v x238
+, x188 v ~x238
+, x237 v ~x238
+, ~x236 v ~x223 v x237
+, x223 v ~x237
+, x236 v ~x237
+, ~x181 v ~x184 v x236
+, x184 v ~x236
+, x181 v ~x236
+, ~x153 v ~x170 v ~x235
+, ~x153 v x170 v x235
+, x153 v ~x170 v x235
+, x153 v x170 v ~x235
+, ~x233 v x234
+, ~x230 v x234
+, x230 v x233 v ~x234
+, ~x231 v ~x232 v ~x233
+, ~x231 v x232 v x233
+, x231 v ~x232 v x233
+, x231 v x232 v ~x233
+, ~x181 v ~x197 v ~x232
+, ~x181 v x197 v x232
+, x181 v ~x197 v x232
+, x181 v x197 v ~x232
+, ~x155 v ~x168 v ~x231
+, ~x155 v x168 v x231
+, x155 v ~x168 v x231
+, x155 v x168 v ~x231
+, ~x229 v x230
+, ~x221 v x230
+, x221 v x229 v ~x230
+, ~x222 v ~x228 v ~x229
+, ~x222 v x228 v x229
+, x222 v ~x228 v x229
+, x222 v x228 v ~x229
+, ~x184 v ~x227 v ~x228
+, ~x184 v x227 v x228
+, x184 v ~x227 v x228
+, x184 v x227 v ~x228
+, ~x226 v x227
+, ~x224 v x227
+, x224 v x226 v ~x227
+, ~x193 v x226
+, ~x225 v x226
+, x225 v x193 v ~x226
+, ~x185 v ~x190 v x225
+, x190 v ~x225
+, x185 v ~x225
+, ~x223 v ~x188 v x224
+, x188 v ~x224
+, x223 v ~x224
+, ~x185 v ~x187 v x223
+, x187 v ~x223
+, x185 v ~x223
+, ~x157 v ~x166 v ~x222
+, ~x157 v x166 v x222
+, x157 v ~x166 v x222
+, x157 v x166 v ~x222
+, ~x220 v x221
+, ~x217 v x221
+, x217 v x220 v ~x221
+, ~x218 v ~x219 v ~x220
+, ~x218 v x219 v x220
+, x218 v ~x219 v x220
+, x218 v x219 v ~x220
+, ~x185 v ~x191 v ~x219
+, ~x185 v x191 v x219
+, x185 v ~x191 v x219
+, x185 v x191 v ~x219
+, ~x159 v ~x164 v ~x218
+, ~x159 v x164 v x218
+, x159 v ~x164 v x218
+, x159 v x164 v ~x218
+, ~x216 v x217
+, ~x213 v x217
+, x213 v x216 v ~x217
+, ~x214 v ~x215 v ~x216
+, ~x214 v x215 v x216
+, x214 v ~x215 v x216
+, x214 v x215 v ~x216
+, ~x187 v ~x188 v ~x215
+, ~x187 v x188 v x215
+, x187 v ~x188 v x215
+, x187 v x188 v ~x215
+, ~x161 v ~x162 v ~x214
+, ~x161 v x162 v x214
+, x161 v ~x162 v x214
+, x161 v x162 v ~x214
+, ~x211 v ~x212 v ~x213
+, ~x211 v x212 v x213
+, x211 v ~x212 v x213
+, x211 v x212 v ~x213
+, ~input_a_0 v ~input_b_0 v ~x212
+, ~input_a_0 v input_b_0 v x212
+, input_a_0 v ~input_b_0 v x212
+, input_a_0 v input_b_0 v ~x212
+, ~input_a_0 v ~input_b_0 v ~x211
+, ~input_a_0 v input_b_0 v x211
+, input_a_0 v ~input_b_0 v x211
+, input_a_0 v input_b_0 v ~x211
+, ~x176 v ~x209 v ~x210
+, ~x176 v x209 v x210
+, x176 v ~x209 v x210
+, x176 v x209 v ~x210
+, ~x208 v x209
+, ~x198 v x209
+, x198 v x208 v ~x209
+, ~x207 v x208
+, ~x203 v x208
+, x203 v x207 v ~x208
+, ~x206 v x207
+, ~x205 v x207
+, x205 v x206 v ~x207
+, ~input_a_7 v ~input_b_7 v x206
+, input_b_7 v ~x206
+, input_a_7 v ~x206
+, ~x177 v ~x204 v x205
+, x204 v ~x205
+, x177 v ~x205
+, ~input_a_6 v ~input_b_6 v x204
+, input_b_6 v ~x204
+, input_a_6 v ~x204
+, ~x179 v ~x202 v x203
+, x202 v ~x203
+, x179 v ~x203
+, ~x201 v x202
+, ~x200 v x202
+, x200 v x201 v ~x202
+, ~input_a_5 v ~input_b_5 v x201
+, input_b_5 v ~x201
+, input_a_5 v ~x201
+, ~x180 v ~x199 v x200
+, x199 v ~x200
+, x180 v ~x200
+, ~input_a_4 v ~input_b_4 v x199
+, input_b_4 v ~x199
+, input_a_4 v ~x199
+, ~x183 v ~x197 v x198
+, x197 v ~x198
+, x183 v ~x198
+, ~x196 v x197
+, ~x192 v x197
+, x192 v x196 v ~x197
+, ~x195 v x196
+, ~x194 v x196
+, x194 v x195 v ~x196
+, ~input_a_3 v ~input_b_3 v x195
+, input_b_3 v ~x195
+, input_a_3 v ~x195
+, ~x184 v ~x193 v x194
+, x193 v ~x194
+, x184 v ~x194
+, ~input_a_2 v ~input_b_2 v x193
+, input_b_2 v ~x193
+, input_a_2 v ~x193
+, ~x186 v ~x191 v x192
+, x191 v ~x192
+, x186 v ~x192
+, ~x190 v x191
+, ~x189 v x191
+, x189 v x190 v ~x191
+, ~input_a_1 v ~input_b_1 v x190
+, input_b_1 v ~x190
+, input_a_1 v ~x190
+, ~x187 v ~x188 v x189
+, x188 v ~x189
+, x187 v ~x189
+, ~input_a_0 v ~input_b_0 v x188
+, input_b_0 v ~x188
+, input_a_0 v ~x188
+, ~input_a_1 v ~input_b_1 v ~x187
+, ~input_a_1 v input_b_1 v x187
+, input_a_1 v ~input_b_1 v x187
+, input_a_1 v input_b_1 v ~x187
+, ~x184 v ~x185 v x186
+, x185 v ~x186
+, x184 v ~x186
+, ~input_a_2 v ~input_b_2 v ~x185
+, ~input_a_2 v input_b_2 v x185
+, input_a_2 v ~input_b_2 v x185
+, input_a_2 v input_b_2 v ~x185
+, ~input_a_3 v ~input_b_3 v ~x184
+, ~input_a_3 v input_b_3 v x184
+, input_a_3 v ~input_b_3 v x184
+, input_a_3 v input_b_3 v ~x184
+, ~x179 v ~x182 v x183
+, x182 v ~x183
+, x179 v ~x183
+, ~x180 v ~x181 v x182
+, x181 v ~x182
+, x180 v ~x182
+, ~input_a_4 v ~input_b_4 v ~x181
+, ~input_a_4 v input_b_4 v x181
+, input_a_4 v ~input_b_4 v x181
+, input_a_4 v input_b_4 v ~x181
+, ~input_a_5 v ~input_b_5 v ~x180
+, ~input_a_5 v input_b_5 v x180
+, input_a_5 v ~input_b_5 v x180
+, input_a_5 v input_b_5 v ~x180
+, ~x177 v ~x178 v x179
+, x178 v ~x179
+, x177 v ~x179
+, ~input_a_6 v ~input_b_6 v ~x178
+, ~input_a_6 v input_b_6 v x178
+, input_a_6 v ~input_b_6 v x178
+, input_a_6 v input_b_6 v ~x178
+, ~input_a_7 v ~input_b_7 v ~x177
+, ~input_a_7 v input_b_7 v x177
+, input_a_7 v ~input_b_7 v x177
+, input_a_7 v input_b_7 v ~x177
+, ~x175 v x176
+, ~x148 v x176
+, x148 v x175 v ~x176
+, ~x149 v ~x174 v x175
+, x174 v ~x175
+, x149 v ~x175
+, ~x173 v x174
+, ~x150 v x174
+, x150 v x173 v ~x174
+, ~x151 v ~x172 v x173
+, x172 v ~x173
+, x151 v ~x173
+, ~x171 v x172
+, ~x152 v x172
+, x152 v x171 v ~x172
+, ~x153 v ~x170 v x171
+, x170 v ~x171
+, x153 v ~x171
+, ~x169 v x170
+, ~x154 v x170
+, x154 v x169 v ~x170
+, ~x155 v ~x168 v x169
+, x168 v ~x169
+, x155 v ~x169
+, ~x167 v x168
+, ~x156 v x168
+, x156 v x167 v ~x168
+, ~x157 v ~x166 v x167
+, x166 v ~x167
+, x157 v ~x167
+, ~x165 v x166
+, ~x158 v x166
+, x158 v x165 v ~x166
+, ~x159 v ~x164 v x165
+, x164 v ~x165
+, x159 v ~x165
+, ~x163 v x164
+, ~x160 v x164
+, x160 v x163 v ~x164
+, ~x161 v ~x162 v x163
+, x162 v ~x163
+, x161 v ~x163
+, ~input_a_0 v ~input_b_0 v x162
+, input_b_0 v ~x162
+, input_a_0 v ~x162
+, ~input_a_1 v ~input_b_1 v ~x161
+, ~input_a_1 v input_b_1 v x161
+, input_a_1 v ~input_b_1 v x161
+, input_a_1 v input_b_1 v ~x161
+, ~input_a_1 v ~input_b_1 v x160
+, input_b_1 v ~x160
+, input_a_1 v ~x160
+, ~input_a_2 v ~input_b_2 v ~x159
+, ~input_a_2 v input_b_2 v x159
+, input_a_2 v ~input_b_2 v x159
+, input_a_2 v input_b_2 v ~x159
+, ~input_a_2 v ~input_b_2 v x158
+, input_b_2 v ~x158
+, input_a_2 v ~x158
+, ~input_a_3 v ~input_b_3 v ~x157
+, ~input_a_3 v input_b_3 v x157
+, input_a_3 v ~input_b_3 v x157
+, input_a_3 v input_b_3 v ~x157
+, ~input_a_3 v ~input_b_3 v x156
+, input_b_3 v ~x156
+, input_a_3 v ~x156
+, ~input_a_4 v ~input_b_4 v ~x155
+, ~input_a_4 v input_b_4 v x155
+, input_a_4 v ~input_b_4 v x155
+, input_a_4 v input_b_4 v ~x155
+, ~input_a_4 v ~input_b_4 v x154
+, input_b_4 v ~x154
+, input_a_4 v ~x154
+, ~input_a_5 v ~input_b_5 v ~x153
+, ~input_a_5 v input_b_5 v x153
+, input_a_5 v ~input_b_5 v x153
+, input_a_5 v input_b_5 v ~x153
+, ~input_a_5 v ~input_b_5 v x152
+, input_b_5 v ~x152
+, input_a_5 v ~x152
+, ~input_a_6 v ~input_b_6 v ~x151
+, ~input_a_6 v input_b_6 v x151
+, input_a_6 v ~input_b_6 v x151
+, input_a_6 v input_b_6 v ~x151
+, ~input_a_6 v ~input_b_6 v x150
+, input_b_6 v ~x150
+, input_a_6 v ~x150
+, ~input_a_7 v ~input_b_7 v ~x149
+, ~input_a_7 v input_b_7 v x149
+, input_a_7 v ~input_b_7 v x149
+, input_a_7 v input_b_7 v ~x149
+, ~input_a_7 v ~input_b_7 v x148
+, input_b_7 v ~x148
+, input_a_7 v ~x148 ].

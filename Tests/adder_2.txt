@@ -1,0 +1,67 @@
+[ x46
+, ~x45 v x46
+, ~x38 v x46
+, x38 v x45 v ~x46
+, ~x44 v x45
+, ~x41 v x45
+, x41 v x44 v ~x45
+, ~x42 v ~x43 v ~x44
+, ~x42 v x43 v x44
+, x42 v ~x43 v x44
+, x42 v x43 v ~x44
+, ~x33 v ~x34 v ~x43
+, ~x33 v x34 v x43
+, x33 v ~x34 v x43
+, x33 v x34 v ~x43
+, ~x29 v ~x30 v ~x42
+, ~x29 v x30 v x42
+, x29 v ~x30 v x42
+, x29 v x30 v ~x42
+, ~x39 v ~x40 v ~x41
+, ~x39 v x40 v x41
+, x39 v ~x40 v x41
+, x39 v x40 v ~x41
+, ~input_a_0 v ~input_b_0 v ~x40
+, ~input_a_0 v input_b_0 v x40
+, input_a_0 v ~input_b_0 v x40
+, input_a_0 v input_b_0 v ~x40
+, ~input_a_0 v ~input_b_0 v ~x39
+, ~input_a_0 v input_b_0 v x39
+, input_a_0 v ~input_b_0 v x39
+, input_a_0 v input_b_0 v ~x39
+, ~x32 v ~x37 v ~x38
+, ~x32 v x37 v x38
+, x32 v ~x37 v x38
+, x32 v x37 v ~x38
+, ~x36 v x37
+, ~x35 v x37
+, x35 v x36 v ~x37
+, ~input_a_1 v ~input_b_1 v x36
+, input_b_1 v ~x36
+, input_a_1 v ~x36
+, ~x33 v ~x34 v x35
+, x34 v ~x35
+, x33 v ~x35
+, ~input_a_0 v ~input_b_0 v x34
+, input_b_0 v ~x34
+, input_a_0 v ~x34
+, ~input_a_1 v ~input_b_1 v ~x33
+, ~input_a_1 v input_b_1 v x33
+, input_a_1 v ~input_b_1 v x33
+, input_a_1 v input_b_1 v ~x33
+, ~x31 v x32
+, ~x28 v x32
+, x28 v x31 v ~x32
+, ~x29 v ~x30 v x31
+, x30 v ~x31
+, x29 v ~x31
+, ~input_a_0 v ~input_b_0 v x30
+, input_b_0 v ~x30
+, input_a_0 v ~x30
+, ~input_a_1 v ~input_b_1 v ~x29
+, ~input_a_1 v input_b_1 v x29
+, input_a_1 v ~input_b_1 v x29
+, input_a_1 v input_b_1 v ~x29
+, ~input_a_1 v ~input_b_1 v x28
+, input_b_1 v ~x28
+, input_a_1 v ~x28 ].

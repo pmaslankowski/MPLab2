@@ -1,0 +1,183 @@
+[ x117
+, ~x116 v x117
+, ~x112 v x117
+, x112 v x116 v ~x117
+, ~input_a_7 v ~x115 v ~x116
+, ~input_a_7 v x115 v x116
+, input_a_7 v ~x115 v x116
+, input_a_7 v x115 v ~x116
+, ~x114 v x115
+, ~x113 v x115
+, x113 v x114 v ~x115
+, ~x106 v ~x109 v x114
+, x109 v ~x114
+, x106 v ~x114
+, ~input_a_7 v ~input_a_7 v x113
+, input_a_7 v ~x113
+, input_a_7 v ~x113
+, ~x111 v x112
+, ~x105 v x112
+, x105 v x111 v ~x112
+, ~input_a_6 v ~x110 v ~x111
+, ~input_a_6 v x110 v x111
+, input_a_6 v ~x110 v x111
+, input_a_6 v x110 v ~x111
+, ~x106 v ~x109 v ~x110
+, ~x106 v x109 v x110
+, x106 v ~x109 v x110
+, x106 v x109 v ~x110
+, ~x108 v x109
+, ~x107 v x109
+, x107 v x108 v ~x109
+, ~x99 v ~x102 v x108
+, x102 v ~x108
+, x99 v ~x108
+, ~input_a_6 v ~input_a_6 v x107
+, input_a_6 v ~x107
+, input_a_6 v ~x107
+, ~input_a_7 v ~input_a_7 v ~x106
+, ~input_a_7 v input_a_7 v x106
+, input_a_7 v ~input_a_7 v x106
+, input_a_7 v input_a_7 v ~x106
+, ~x104 v x105
+, ~x98 v x105
+, x98 v x104 v ~x105
+, ~input_a_5 v ~x103 v ~x104
+, ~input_a_5 v x103 v x104
+, input_a_5 v ~x103 v x104
+, input_a_5 v x103 v ~x104
+, ~x99 v ~x102 v ~x103
+, ~x99 v x102 v x103
+, x99 v ~x102 v x103
+, x99 v x102 v ~x103
+, ~x101 v x102
+, ~x100 v x102
+, x100 v x101 v ~x102
+, ~x92 v ~x95 v x101
+, x95 v ~x101
+, x92 v ~x101
+, ~input_a_5 v ~input_a_5 v x100
+, input_a_5 v ~x100
+, input_a_5 v ~x100
+, ~input_a_6 v ~input_a_6 v ~x99
+, ~input_a_6 v input_a_6 v x99
+, input_a_6 v ~input_a_6 v x99
+, input_a_6 v input_a_6 v ~x99
+, ~x97 v x98
+, ~x91 v x98
+, x91 v x97 v ~x98
+, ~input_a_4 v ~x96 v ~x97
+, ~input_a_4 v x96 v x97
+, input_a_4 v ~x96 v x97
+, input_a_4 v x96 v ~x97
+, ~x92 v ~x95 v ~x96
+, ~x92 v x95 v x96
+, x92 v ~x95 v x96
+, x92 v x95 v ~x96
+, ~x94 v x95
+, ~x93 v x95
+, x93 v x94 v ~x95
+, ~x85 v ~x88 v x94
+, x88 v ~x94
+, x85 v ~x94
+, ~input_a_4 v ~input_a_4 v x93
+, input_a_4 v ~x93
+, input_a_4 v ~x93
+, ~input_a_5 v ~input_a_5 v ~x92
+, ~input_a_5 v input_a_5 v x92
+, input_a_5 v ~input_a_5 v x92
+, input_a_5 v input_a_5 v ~x92
+, ~x90 v x91
+, ~x84 v x91
+, x84 v x90 v ~x91
+, ~input_a_3 v ~x89 v ~x90
+, ~input_a_3 v x89 v x90
+, input_a_3 v ~x89 v x90
+, input_a_3 v x89 v ~x90
+, ~x85 v ~x88 v ~x89
+, ~x85 v x88 v x89
+, x85 v ~x88 v x89
+, x85 v x88 v ~x89
+, ~x87 v x88
+, ~x86 v x88
+, x86 v x87 v ~x88
+, ~x78 v ~x81 v x87
+, x81 v ~x87
+, x78 v ~x87
+, ~input_a_3 v ~input_a_3 v x86
+, input_a_3 v ~x86
+, input_a_3 v ~x86
+, ~input_a_4 v ~input_a_4 v ~x85
+, ~input_a_4 v input_a_4 v x85
+, input_a_4 v ~input_a_4 v x85
+, input_a_4 v input_a_4 v ~x85
+, ~x83 v x84
+, ~x77 v x84
+, x77 v x83 v ~x84
+, ~input_a_2 v ~x82 v ~x83
+, ~input_a_2 v x82 v x83
+, input_a_2 v ~x82 v x83
+, input_a_2 v x82 v ~x83
+, ~x78 v ~x81 v ~x82
+, ~x78 v x81 v x82
+, x78 v ~x81 v x82
+, x78 v x81 v ~x82
+, ~x80 v x81
+, ~x79 v x81
+, x79 v x80 v ~x81
+, ~x71 v ~x74 v x80
+, x74 v ~x80
+, x71 v ~x80
+, ~input_a_2 v ~input_a_2 v x79
+, input_a_2 v ~x79
+, input_a_2 v ~x79
+, ~input_a_3 v ~input_a_3 v ~x78
+, ~input_a_3 v input_a_3 v x78
+, input_a_3 v ~input_a_3 v x78
+, input_a_3 v input_a_3 v ~x78
+, ~x76 v x77
+, ~x70 v x77
+, x70 v x76 v ~x77
+, ~input_a_1 v ~x75 v ~x76
+, ~input_a_1 v x75 v x76
+, input_a_1 v ~x75 v x76
+, input_a_1 v x75 v ~x76
+, ~x71 v ~x74 v ~x75
+, ~x71 v x74 v x75
+, x71 v ~x74 v x75
+, x71 v x74 v ~x75
+, ~x73 v x74
+, ~x72 v x74
+, x72 v x73 v ~x74
+, ~x66 v ~x67 v x73
+, x67 v ~x73
+, x66 v ~x73
+, ~input_a_1 v ~input_a_1 v x72
+, input_a_1 v ~x72
+, input_a_1 v ~x72
+, ~input_a_2 v ~input_a_2 v ~x71
+, ~input_a_2 v input_a_2 v x71
+, input_a_2 v ~input_a_2 v x71
+, input_a_2 v input_a_2 v ~x71
+, ~x69 v x70
+, ~x65 v x70
+, x65 v x69 v ~x70
+, ~input_a_0 v ~x68 v ~x69
+, ~input_a_0 v x68 v x69
+, input_a_0 v ~x68 v x69
+, input_a_0 v x68 v ~x69
+, ~x66 v ~x67 v ~x68
+, ~x66 v x67 v x68
+, x66 v ~x67 v x68
+, x66 v x67 v ~x68
+, ~input_a_0 v ~input_a_0 v x67
+, input_a_0 v ~x67
+, input_a_0 v ~x67
+, ~input_a_1 v ~input_a_1 v ~x66
+, ~input_a_1 v input_a_1 v x66
+, input_a_1 v ~input_a_1 v x66
+, input_a_1 v input_a_1 v ~x66
+, ~input_a_0 v ~input_a_0 v ~x65
+, ~input_a_0 v input_a_0 v x65
+, input_a_0 v ~input_a_0 v x65
+, input_a_0 v input_a_0 v ~x65 ].
